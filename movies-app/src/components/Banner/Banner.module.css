@@ -1,0 +1,11 @@
+.banner__sect {
+    background-image: url("/public/imgs/banner-home.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    margin-top: 4rem;
+
+    width: 100%;
+    height: 397px;
+}

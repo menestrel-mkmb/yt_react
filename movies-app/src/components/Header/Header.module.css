@@ -5,6 +5,7 @@
     position: fixed;
     top: 0;
     width: calc(100% - 5rem);
+    max-height: 4rem;
 
     padding: .5rem 2.5rem;
 
@@ -23,15 +24,16 @@
 }
 
 .menu__nav {
-    color: white;
-    
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .menu__item {
-    font-size: 1.5rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    padding-inline: 1rem;
     text-transform: uppercase;
     text-decoration: none;
 }
