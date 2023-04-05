@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Banner />
+      <Banner bannerImg="home" />
       <Container>
         <h1 className="content__title">Hello World</h1>
         <p className="content__txt">Estou aprendendo React JS</p>

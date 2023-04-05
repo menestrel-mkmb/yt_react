@@ -1,9 +1,11 @@
 import styles from "./Banner.module.css"
 
-function Banner() {
+function Banner( { bannerImg } ) {
     return (
-    <section className={ styles.banner__sect } >
-    </section>
+        <section
+            className={ styles.banner__sect }
+            style={{ backgroundImage: `url("./imgs/banner-${bannerImg}.png")` }}
+        ></section>
     );
 }
 

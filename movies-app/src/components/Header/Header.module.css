@@ -5,6 +5,7 @@
     position: fixed;
     top: 0;
     width: calc(100% - 5rem);
+    min-height: 65px;
     max-height: 4rem;
 
     padding: .5rem 2.5rem;
