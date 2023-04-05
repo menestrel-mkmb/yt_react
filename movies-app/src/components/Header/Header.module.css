@@ -17,11 +17,10 @@
 
 .home__link {
     color: #b71c1c;
-    text-decoration: none;
-
+    
     font-size: 2rem;
     font-weight: 500;
-    
+    text-decoration: none;
 }
 
 .menu__nav {
@@ -32,9 +31,11 @@
 
 .menu__item {
     color: white;
+
     font-size: 1rem;
     font-weight: 300;
-    padding-inline: 1rem;
     text-transform: uppercase;
     text-decoration: none;
+
+    padding-inline: 1rem;
 }

@@ -1,7 +1,9 @@
 import Header from "./components/Header";
+import Footer from "./components/Footer";
+
 import Banner from "./components/Banner";
 import Container from "./components/Container";
-import Footer from "./components/Footer";
+import Card from "./components/Card";
 
 function App() {
   return (
@@ -9,26 +11,18 @@ function App() {
       <Header />
       <Banner bannerImg="home" />
       <Container>
-        <h1 className="content__title">Hello World</h1>
-        <p className="content__txt">Estou aprendendo React JS</p>
-        <p className="content__txt">Estou aprendendo React JS</p>
-        <p className="content__txt">Estou aprendendo React JS</p>
-        <p className="content__txt">Estou aprendendo React JS</p>
-        <p className="content__txt">Estou aprendendo React JS</p>
-        <p className="content__txt">Estou aprendendo React JS</p>
-        <p className="content__txt">Estou aprendendo React JS</p>
-        <p className="content__txt">Estou aprendendo React JS</p>
-        <p className="content__txt">Estou aprendendo React JS</p>
-        <p className="content__txt">Estou aprendendo React JS</p>
-        <p className="content__txt">Estou aprendendo React JS</p>
-        <p className="content__txt">Estou aprendendo React JS</p>
-        <p className="content__txt">Estou aprendendo React JS</p>
-        <p className="content__txt">Estou aprendendo React JS</p>
-        <p className="content__txt">Estou aprendendo React JS</p>
-        <p className="content__txt">Estou aprendendo React JS</p>
-        <p className="content__txt">Estou aprendendo React JS</p>
-        <p className="content__txt">Estou aprendendo React JS</p>
-        <p className="content__txt">Estou aprendendo React JS</p>
+        <Card cardImg="JSxV0ljL1rM"/>
+        <Card cardImg="JSxV0ljL1rM"/>
+        <Card cardImg="JSxV0ljL1rM"/>
+        <Card cardImg="JSxV0ljL1rM"/>
+        <Card cardImg="JSxV0ljL1rM"/>
+        <Card cardImg="JSxV0ljL1rM"/>
+        <Card cardImg="JSxV0ljL1rM"/>
+        <Card cardImg="JSxV0ljL1rM"/>
+        <Card cardImg="JSxV0ljL1rM"/>
+        <Card cardImg="JSxV0ljL1rM"/>
+        <Card cardImg="JSxV0ljL1rM"/>
+        <Card cardImg="JSxV0ljL1rM"/>
       </ Container>
 
       <Footer />
