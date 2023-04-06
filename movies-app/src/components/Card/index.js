@@ -6,18 +6,18 @@ const youtubeStructure = {
     thumbLinkEnd: "/mqdefault.jpg"
 }
 
-function Card( { cardImg }) {
+function Card( { videoId }) {
     return (
         <article
             className={ styles.card__artcl }
 
         >
             <a
-                href={ youtubeStructure.videoLink + cardImg }
+                href={ youtubeStructure.videoLink + videoId }
                 rel="noreferrer noopener"
                 target='_blank '
             >
-                <img src={ youtubeStructure.thumbLinkStart + cardImg + youtubeStructure.thumbLinkEnd } alt="" />
+                <img src={ youtubeStructure.thumbLinkStart + videoId + youtubeStructure.thumbLinkEnd } alt="" />
             </a>
         </article>
     );

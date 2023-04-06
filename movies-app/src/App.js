@@ -6,6 +6,9 @@ import Container from "./components/Container";
 import Category from "./components/Category";
 import Card from "./components/Card";
 
+import tituloUm from "./json/tituloUm.json";
+import tituloDois from "./json/tituloDois.json";
+
 function App() {
   return (
     <div className="App">
@@ -13,23 +16,26 @@ function App() {
       <Banner bannerImg="home" />
       <Container>
 
+        <h2 className="cat__title">ReactJS</h2>
         <Category>
-          <h2 className="cat__title">Titulo 1</h2>
-          <Card cardImg="JSxV0ljL1rM"/>
-          <Card cardImg="JSxV0ljL1rM"/>
-          <Card cardImg="JSxV0ljL1rM"/>
-          <Card cardImg="JSxV0ljL1rM"/>
-          <Card cardImg="JSxV0ljL1rM"/>
+          {
+            tituloUm.map( (video) => {
+              return (
+                <Card videoId={video.id} key={video.id} />);
+            })
+          }
         </Category>
 
+        <h2 className="cat__title">NodeJS</h2>
         <Category>
-          <h2 className="cat__title">Titulo 1</h2>
-          <Card cardImg="JSxV0ljL1rM"/>
-          <Card cardImg="JSxV0ljL1rM"/>
-          <Card cardImg="JSxV0ljL1rM"/>
-          <Card cardImg="JSxV0ljL1rM"/>
-          <Card cardImg="JSxV0ljL1rM"/>
+        {
+            tituloDois.map( (video) => {
+              return (
+                <Card videoId={video.id} key={video.id} />);
+            })
+          }
         </Category>
+
       </ Container>
 
       <Footer />
