@@ -6,8 +6,9 @@ import Container from "./components/Container";
 import Category from "./components/Category";
 import Card from "./components/Card";
 
-import tituloUm from "./json/tituloUm.json";
-import tituloDois from "./json/tituloDois.json";
+import reactjs from "./json/reactjs.json";
+import nodejs from "./json/nodejs.json";
+import mysql from "./json/mysql.json";
 
 function App() {
   return (
@@ -18,22 +19,17 @@ function App() {
 
         <h2 className="cat__title">ReactJS</h2>
         <Category>
-          {
-            tituloUm.map( (video) => {
-              return (
-                <Card videoId={video.id} key={video.id} />);
-            })
-          }
+          { reactjs.map( (video) => <Card videoId={video.id} key={video.id} />) }
         </Category>
 
         <h2 className="cat__title">NodeJS</h2>
         <Category>
-        {
-            tituloDois.map( (video) => {
-              return (
-                <Card videoId={video.id} key={video.id} />);
-            })
-          }
+          { nodejs.map( (video) => <Card videoId={video.id} key={video.id} />) }
+        </Category>
+
+        <h2 className="cat__title">MySQL</h2>
+        <Category>
+          { mysql.map( (video) => <Card videoId={video.id} key={video.id} />) }
         </Category>
 
       </ Container>
