@@ -1,14 +1,15 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import AppRoutes from "./routes";
 
-import Home from "./pages/Home";
+
 
 function App() {
   return (
     <div className="App">
       <Header />
       
-      <Home />
+      <AppRoutes />
 
       <Footer />
     </div>

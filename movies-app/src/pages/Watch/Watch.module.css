@@ -1,3 +1,8 @@
 .content__main {
     color: white;
 }
+
+.watch__title {
+    color: white;
+    font-size: 2.5rem;
+}
