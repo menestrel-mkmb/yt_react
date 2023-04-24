@@ -1,5 +1,9 @@
 .content__main {
+    background-color: black;
     color: white;
+    display: block;
+
+    padding: 3rem;
 }
 
 .watch__title {
