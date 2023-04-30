@@ -1,7 +1,10 @@
 import styles from "./Card.module.css"
 
+import { Link } from "react-router-dom";
+
 const youtubeStructure = {
     videoLink: "https://www.youtube.com/watch?v=",
+    videoEmbedded: "https://www.youtube.com/embed/",
     thumbLinkStart: "https://img.youtube.com/vi/",
     thumbLinkEnd: "/mqdefault.jpg"
 }
@@ -14,8 +17,6 @@ function Card( { videoId }) {
         >
             <a
                 href={ youtubeStructure.videoLink + videoId }
-                rel="noreferrer noopener"
-                target='_blank '
             >
                 <img src={ youtubeStructure.thumbLinkStart + videoId + youtubeStructure.thumbLinkEnd } alt="" />
             </a>
