@@ -1,6 +1,8 @@
 import styles from "./Card.module.css";
 import youtubeStructure from "../../youtubeStructure";
 
+import Watch from "../../pages/Watch";
+
 import { Link } from "react-router-dom";
 
 function Card( { videoId }) {
@@ -8,7 +10,7 @@ function Card( { videoId }) {
         <article
             className={ styles.card__artcl }
         >
-            <Link to="/watch" videoToIframe={ videoId }>
+            <Link to="/watch" element={ <Watch videoToIframe={ videoId } />}>
                 <img src={ youtubeStructure.thumbLinkStart + videoId + youtubeStructure.thumbLinkEnd } alt="" />
             </Link>
         </article>
