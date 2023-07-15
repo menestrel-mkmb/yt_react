@@ -1,24 +1,16 @@
-import styles from "./Card.module.css"
+import styles from "./Card.module.css";
+import youtubeStructure from "../../youtubeStructure";
 
-const youtubeStructure = {
-    videoLink: "https://www.youtube.com/watch?v=",
-    thumbLinkStart: "https://img.youtube.com/vi/",
-    thumbLinkEnd: "/mqdefault.jpg"
-}
+import { Link } from "react-router-dom";
 
 function Card( { videoId }) {
     return (
         <article
             className={ styles.card__artcl }
-
         >
-            <a
-                href={ youtubeStructure.videoLink + videoId }
-                rel="noreferrer noopener"
-                target='_blank '
-            >
+            <Link to="/watch" videoToIframe={ videoId }>
                 <img src={ youtubeStructure.thumbLinkStart + videoId + youtubeStructure.thumbLinkEnd } alt="" />
-            </a>
+            </Link>
         </article>
     );
 }
