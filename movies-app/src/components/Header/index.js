@@ -9,6 +9,7 @@ function Header() {
             <nav className={ styles.menu__nav } >
                 <Link to="/" className={ styles.menu__item } >Home</Link>
                 <Link to="/watch/S4sbiQZJsVc" className={ styles.menu__item } >Assistir</Link>
+                <Link to="/favorites" className={ styles.menu__item } >Favoritos</Link>
             </nav>
         </header>
     );
