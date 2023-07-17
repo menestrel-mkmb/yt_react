@@ -8,8 +8,6 @@
 
     min-height: 90vh;
     margin: 1rem 0;
-    margin-top: 5rem;
-    padding: 5rem;
 }
 
 .watch__title {
@@ -19,5 +17,5 @@
 
 .yt__iframe {
     min-height: calc(4rem + 480px);
-    padding: 2rem 0;
+    padding: 1.5rem 0;
 }

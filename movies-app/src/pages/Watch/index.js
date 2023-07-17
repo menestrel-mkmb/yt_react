@@ -1,5 +1,6 @@
 import styles from "./Watch.module.css";
 import youtubeStructure from "../../youtubeStructure";
+import Banner from "../../components/Banner";
 
 import { useParams } from "react-router-dom";
 
@@ -8,6 +9,7 @@ function Watch(){
     const videoId = params.id;
     return(
         <main className={ styles.content__main }>
+            <Banner bannerImg="watch" />
             <h1 className={ styles.watch__title }>Assistir</h1>
             <div className={ styles.yt__iframe }>
                 <iframe
