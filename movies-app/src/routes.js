@@ -13,7 +13,7 @@ function AppRoutes() {
             <Header />
             <Routes>
                 <Route exact path="/" element={ <Home /> } ></Route>
-                <Route exact path="/watch" element={ <Watch /> } ></Route>
+                <Route exact path="/watch/:id" element={ <Watch /> } ></Route>
                 <Route path="*" element={ <ErrorNotFound />}></Route>
             </Routes>
             <Footer />

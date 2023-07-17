@@ -10,7 +10,7 @@ function Card( { videoId }) {
         <article
             className={ styles.card__artcl }
         >
-            <Link to="/watch" element={ <Watch videoToIframe={ videoId } />}>
+            <Link to={`/watch/${videoId}`} element={ <Watch /> }>
                 <img src={ youtubeStructure.thumbLinkStart + videoId + youtubeStructure.thumbLinkEnd } alt="" />
             </Link>
         </article>
