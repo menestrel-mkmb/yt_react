@@ -9,10 +9,10 @@ function Watch(){
     const videoId = params.id;
     return(
         <main className={ styles.content__main }>
-            <Banner bannerImg="watch" />
+            <Banner className={ styles.banner__img} bannerImg="watch" />
             <div className={ styles.watchline__text } >
                 <h1 className={ styles.watch__title }>Assistir</h1>
-                <a
+                <a  className={ styles.yt__link }
                     href={ youtubeStructure.videoLink + videoId }
                     rel="noreferrer noopener"
                     target='_blank '

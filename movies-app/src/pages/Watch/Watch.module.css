@@ -2,19 +2,25 @@
     background-color: black;
     color: white;
     display: flex;
+    flex: 1 0 flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    min-height: 90vh;
-    margin: 0;
+    margin-bottom: 1.5rem;
 }
 
 .watchline__text {
+    position: relative;
+    top: -2rem;
+
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 854px;
+
+    height: 2rem;
+    min-width: 854px;
+    padding: 0 1rem;
 }
 
 .watch__title {
@@ -24,6 +30,15 @@
     margin: 0 auto;
 }
 
+.yt__link {
+    background: #000800;
+    border-radius: .5rem;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
 .yt__iframe {
     min-height: 480px;
+    margin: .5rem 0;
 }
