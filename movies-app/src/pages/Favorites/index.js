@@ -19,7 +19,7 @@ function Favorites(){
     const [ useFavorites, setFavorites ] = useState(favStorage);
 
     return(
-        <main className={ styles.content }>
+        <main className={ styles.content__main }>
             <Banner bannerImg="favorites"/>
             <h2 className={ styles.fav__title }>
                 Favoritos
