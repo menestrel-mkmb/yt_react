@@ -2,10 +2,10 @@ import styles from "./Favorites.module.css";
 import Banner from "../../components/Banner";
 import Card from "../../components/Card";
 
-import { useState } from "react";
+// import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export const favStorage = localStorage.getItem("favorites") || [];
+export let favStorage = localStorage.getItem("favorites") || ['3CRhYhJttcw', '5INMUcXFaaQ'];
 
 export function addFavorites( videoId ){
     favStorage = [...favStorage, videoId];
@@ -16,7 +16,6 @@ export function delFavorites( videoId ){
 }
 
 function Favorites(){
-    const [ useFavorites, setFavorites ] = useState(favStorage);
 
     return(
         <main className={ styles.content__main }>
@@ -25,13 +24,12 @@ function Favorites(){
                 Favoritos
             </h2>
             <section className={ styles.fav__section }>
-                {favStorage.map( (obj, index) => {
-                    <article>
-                        <Card videoId={ obj.id } />
-                        <h3>obj.name</h3>
+                {favStorage.map( (obj) => { return(
+                    <article className={ styles.fav__videoList }>
+                        <Card videoId={ obj } />
                         <Link className={ styles.fav__btn } >{`</3`}</Link>
                     </article>
-                } )}
+                )} )}
             </section>
         </main>
     );

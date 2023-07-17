@@ -1,4 +1,21 @@
 .content__main {
     background-color: black;
     color: white;
+
+    height: 100%;
+}
+
+.fav__title {
+    font-size: 2.5rem;
+
+    padding: 1rem 0;
+}
+
+.fav__section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
 }
