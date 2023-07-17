@@ -4,7 +4,7 @@ function Banner( { bannerImg } ) {
     return (
         <section
             className={ styles.banner__sect }
-            style={{ backgroundImage: `url("./imgs/banner-${bannerImg}.png")` }}
+            style={{ backgroundImage: `url("../imgs/banner-${bannerImg}.png")` }}
         ></section>
     );
 }

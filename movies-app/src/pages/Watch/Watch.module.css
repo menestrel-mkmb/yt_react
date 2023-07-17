@@ -7,15 +7,23 @@
     align-items: center;
 
     min-height: 90vh;
-    margin: 1rem 0;
+    margin: 0;
+}
+
+.watchline__text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 854px;
 }
 
 .watch__title {
     color: white;
     font-size: 2.5rem;
+    justify-self: center;
+    margin: 0 auto;
 }
 
 .yt__iframe {
-    min-height: calc(4rem + 480px);
-    padding: 1.5rem 0;
+    min-height: 480px;
 }
