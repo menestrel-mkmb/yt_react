@@ -1,295 +1,186 @@
 [
-    {
-        "id": "KsFLXOTflsM",
-        
-        "category": "React"
-    },
-    {
-        "id": "qFmQESnPhdE",
-        
-        "category": "React"
-    },
-    {
-        "id": "r4oU-UNPCFI",
-        
-        "category": "React"
-    },
-    {
-        "id": "Wd-XAuQJRnY",
-        
-        "category": "React"
-    },
-    {
-        "id": "JSxV0ljL1rM",
-        
-        "category": "React"
-    },
-    {
-        "id": "05WeJCU8CJ4",
-        
-        "category": "NodeJS"
-    },
-    {
-        "id": "V3PUGubaSQo",
-        
-        "category": "NodeJS"
-    },
-    {
-        "id": "4GdHVfqWxOw",
-        
-        "category": "NodeJS"
-    },
-    {
-        "id": "67GVpULYJ3k",
-        
-        "category": "NodeJS"
-    },
-    {
-        "id": "IsomhYdkg_0",
-        
-        "category": "NodeJS"
-    },
-    {
-        "id": "V2ONn0GMhbE",
-        
-        "category": "MySQL"
-    },
-    {
-        "id": "yHrsHV4s3zU",
-        
-        "category": "MySQL"
-    },
-    {
-        "id": "YMtO_DFOZUg",
-        
-        "category": "MySQL"
-    },
-    {
-        "id": "mtilVRGSNY4",
-        
-        "category": "MySQL"
-    },
-    {
-        "id": "oL879QfFDEU",
-        
-        "category": "MySQL"
-    },
-    {
-        "id": "B_nq7VTJZds",
-        
-        
-        
-        "category": "Geografia"
-    },
-    {
-        "id": "8PjBddZ2cdo",
-        
-        
-        
-        "category": "Geografia"
-    },
-    {
-        "id": "yqZsBn5Z1xc",
-        
-        
-        
-        "category": "Geografia"
-    },
-    {
-        "id": "ee15tCw1kYo",
-        
-        
-        
-        "category": "Geografia"
-    },
-    {
-        "id": "QUc_M1b1uNE",
-        
-        
-        
-        "category": "Geografia"
-    },
-    {
-      "id": "YzBkkC2SXxM",
-      
-      
-      
+  {
+      "id": "KsFLXOTflsM",
+      "category": "React"
+  },
+  {
+      "id": "qFmQESnPhdE",
+      "category": "React"
+  },
+  {
+      "id": "r4oU-UNPCFI",
+      "category": "React"
+  },
+  {
+      "id": "Wd-XAuQJRnY",
+      "category": "React"
+  },
+  {
+      "id": "JSxV0ljL1rM",
+      "category": "React"
+  },
+  {
+      "id": "05WeJCU8CJ4",
+      "category": "NodeJS"
+  },
+  {
+      "id": "V3PUGubaSQo",
+      "category": "NodeJS"
+  },
+  {
+      "id": "4GdHVfqWxOw",
+      "category": "NodeJS"
+  },
+  {
+      "id": "67GVpULYJ3k",
+      "category": "NodeJS"
+  },
+  {
+      "id": "IsomhYdkg_0",
+      "category": "NodeJS"
+  },
+  {
+      "id": "V2ONn0GMhbE",
+      "category": "MySQL"
+  },
+  {
+      "id": "yHrsHV4s3zU",
+      "category": "MySQL"
+  },
+  {
+      "id": "YMtO_DFOZUg",
+      "category": "MySQL"
+  },
+  {
+      "id": "mtilVRGSNY4",
+      "category": "MySQL"
+  },
+  {
+      "id": "oL879QfFDEU",
+      "category": "MySQL"
+  },
+  {
+      "id": "B_nq7VTJZds",
       "category": "Geografia"
-    },
-    {
-      "id": "pHJKEwJarSo",
-      
-      
-      
+  },
+  {
+      "id": "8PjBddZ2cdo",
       "category": "Geografia"
-    },
-    {
-        "id": "zBVCW8xc19Q",
-        
-        
-        
-        "category": "Como fazer e usar"
-    },
-    {
-        "id": "pYG6MUbLnVY",
-        
-        
-        
-        "category": "Como fazer e usar"
-    },
-    {
-        "id": "pvFy8PhJ-sY",
-        
-        
-        
-        "category": "Como fazer e usar"
-    },
-    {
-        "id": "Cy7Y8Jmdw8w",
-        
-        
-        
-        "category": "Como fazer e usar"
-    },
-    {
-        "id": "AeHMawcMxVQ",
-        
-        
-        
-        "category": "Como fazer e usar"
-    },
-    {
-      "id": "1PZIVrYUIhI",
-      
-      
-      
+  },
+  {
+      "id": "yqZsBn5Z1xc",
+      "category": "Geografia"
+  },
+  {
+      "id": "ee15tCw1kYo",
+      "category": "Geografia"
+  },
+  {
+      "id": "QUc_M1b1uNE",
+      "category": "Geografia"
+  },
+  {
+    "id": "YzBkkC2SXxM",
+    "category": "Geografia"
+  },
+  {
+    "id": "pHJKEwJarSo",
+    "category": "Geografia"
+  },
+  {
+      "id": "zBVCW8xc19Q",
       "category": "Como fazer e usar"
-    },
-    {
-      "id": "70LgFtkVfzY",
-      
-      
-      
+  },
+  {
+      "id": "pYG6MUbLnVY",
       "category": "Como fazer e usar"
-    },
-    {
-      
-      "id": "UerCpbS4KJk",
-      
-      
-      
+  },
+  {
+      "id": "pvFy8PhJ-sY",
       "category": "Como fazer e usar"
-    },
-    {
-      "id": "j93GpAPaLx8",
-      
-      
-      
+  },
+  {
+      "id": "Cy7Y8Jmdw8w",
       "category": "Como fazer e usar"
-    },
-    {
-      "id": "zddTZjpEOxA",
-      
-      
-      
+  },
+  {
+      "id": "AeHMawcMxVQ",
       "category": "Como fazer e usar"
-    },
-    {
-      "id": "2JTPUXqWEKg",
-      
-      
-      
-      "category": "Astronomia e Geografia"
-    },
-    {
-      "id": "_hvwmwCIbSA",
-      
-      
-      
-      "category": "Astronomia e Geografia"
-    },
-    {
-      "id": "1lZDLyMKwwE",
-      
-      
-      
-      "category": "Climatologia, Meteorologia, Vegetação"
-    },
-    {
-      "id": "V-v3wTK_KpI",
-      
-      
-      
-      "category": "Climatologia, Meteorologia, Vegetação"
-    },
-    {
-      "id": "11NJB81im1Q",
-      
-      
-      
-      "category": "Climatologia, Meteorologia, Vegetação"
-    },
-    {
-      "id": "bhQsWpGSLeQ",
-      
-      
-      
-      "category": "Climatologia, Meteorologia, Vegetação"
-    },
-    {
-      "id": "oYZZybbhJII",
-      
-      
-      
-      "category": "Climatologia, Meteorologia, Vegetação"
-    },
-    {
-      "id": "tnFEqmtoNY8",
-      
-      
-      
-      "category": "Climatologia, Meteorologia, Vegetação"
-    },
-    {
-      "id": "of5e0QO6BtY",
-      
-      
-      
-      "category": "Climatologia, Meteorologia, Vegetação"
-    },
-    {
-      "id": "PY4VyxfefqY",
-      
-      
-      
-      "category": "Climatologia, Meteorologia, Vegetação"
-    },
-    {
-      "id": "cp_xDdMT6eU",
-      
-      
-      
-      "category": "Geologia e Hidrografia"
-    },
-    {
-      "id": "3XPAx3aQ760",
-      
-      
-      
-      "category": "Geologia e Hidrografia"
-    },
-    {
-      "id": "QWBDmGd9t4s",
-      
-      
-      
-      "category": "Geologia e Hidrografia"
-    },
-    {
-      "id": "4ADuk1kY6Vw",
-      
-      
-      
-      "category": "Geologia e Hidrografia"
-    }
+  },
+  {
+    "id": "1PZIVrYUIhI",
+    "category": "Como fazer e usar"
+  },
+  {
+    "id": "70LgFtkVfzY",
+    "category": "Como fazer e usar"
+  },
+  {
+    "id": "UerCpbS4KJk",
+    "category": "Como fazer e usar"
+  },
+  {
+    "id": "j93GpAPaLx8",
+    "category": "Como fazer e usar"
+  },
+  {
+    "id": "zddTZjpEOxA",
+    "category": "Como fazer e usar"
+  },
+  {
+    "id": "2JTPUXqWEKg",
+    "category": "Astronomia e Geografia"
+  },
+  {
+    "id": "_hvwmwCIbSA",
+    "category": "Astronomia e Geografia"
+  },
+  {
+    "id": "1lZDLyMKwwE",
+    "category": "Climatologia, Meteorologia, Vegetação"
+  },
+  {
+    "id": "V-v3wTK_KpI",
+    "category": "Climatologia, Meteorologia, Vegetação"
+  },
+  {
+    "id": "11NJB81im1Q",
+    "category": "Climatologia, Meteorologia, Vegetação"
+  },
+  {
+    "id": "bhQsWpGSLeQ",
+    "category": "Climatologia, Meteorologia, Vegetação"
+  },
+  {
+    "id": "oYZZybbhJII",
+    "category": "Climatologia, Meteorologia, Vegetação"
+  },
+  {
+    "id": "tnFEqmtoNY8",
+    "category": "Climatologia, Meteorologia, Vegetação"
+  },
+  {
+    "id": "of5e0QO6BtY",
+    "category": "Climatologia, Meteorologia, Vegetação"
+  },
+  {
+    "id": "PY4VyxfefqY",
+    "category": "Climatologia, Meteorologia, Vegetação"
+  },
+  {
+    "id": "cp_xDdMT6eU",
+    "category": "Geologia e Hidrografia"
+  },
+  {
+    "id": "3XPAx3aQ760",
+    "category": "Geologia e Hidrografia"
+  },
+  {
+    "id": "QWBDmGd9t4s",
+    "category": "Geologia e Hidrografia"
+  },
+  {
+    "id": "4ADuk1kY6Vw",
+    "category": "Geologia e Hidrografia"
+  }
 ]
