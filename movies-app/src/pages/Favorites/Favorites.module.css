@@ -10,6 +10,9 @@
 
     padding: 1rem 0;
 }
+.empty__text {
+    min-height: 25vh;
+}
 
 .fav__section {
     display: flex;
