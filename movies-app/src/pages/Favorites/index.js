@@ -4,8 +4,8 @@ import Card from "../../components/Card";
 
 import { Link } from "react-router-dom";
 
-export let favStorage = localStorage.getItem("favorites") || [];
-// export let favStorage = localStorage.getItem("favorites") || ['3CRhYhJttcw', '5INMUcXFaaQ'];
+// export let favStorage = localStorage.getItem("favorites") || [];
+export let favStorage = localStorage.getItem("favorites") || ['3CRhYhJttcw', '5INMUcXFaaQ'];
 
 export function addFavorites( videoId ){
     favStorage = [...favStorage, videoId];
