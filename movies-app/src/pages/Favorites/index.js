@@ -1,6 +1,6 @@
 import styles from "./Favorites.module.css";
 import Banner from "../../components/Banner";
-import Card from "../../components/Card";
+import youtubeStructure from "../../youtubeStructure";
 
 import { Link } from "react-router-dom";
 
@@ -26,7 +26,12 @@ function artcEmpty() {
 function artcFav( obj ){
     return (
         <article key={ obj } className={ styles.fav__videoList }>
-            <Card videoId={ obj } />
+            <iframe className={ styles.yt__iframe }
+            width="854" height="480"
+            src={ youtubeStructure.linkEmbed + obj }
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
             <Link className={ styles.fav__btn } >{`</3`}</Link>
         </article>
     );
