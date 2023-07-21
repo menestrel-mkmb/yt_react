@@ -5,12 +5,12 @@ import videos from "../../json/videos.json";
 function Category() {
 
     let catVideos = {}, uniqueCat = [];
-    videos.map( (video) => {
+    videos.map( function (video) {
         (catVideos[video.category] === undefined) ?
             catVideos[video.category] = [video] :
             catVideos[video.category] = [...catVideos[video.category], video];
-        
-        if(!uniqueCat.includes(video.category))
+
+        if (!uniqueCat.includes(video.category))
             uniqueCat = [...uniqueCat, video.category];
     })
 
