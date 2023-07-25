@@ -30,9 +30,10 @@
 }
 
 .fav__btn {
-    color: red;
-    background-color: white;
+    color: white;
+    background-color: red;
     border-radius: 25%;
+    text-decoration: none;
 
     position: relative;
     top: -420px;
