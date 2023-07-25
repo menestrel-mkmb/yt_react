@@ -3,14 +3,19 @@ import youtubeStructure from "../../youtubeStructure";
 import Banner from "../../components/Banner";
 
 import { useParams, Link } from "react-router-dom";
-import { addFavorites, delFavorites, favStorage } from "../Favorites";
+import { addFavorites, delFavorites } from "../Favorites";
+import { useEffect } from "react";
 
 function Watch(){
     const params = useParams();
     const videoId = params.id;
 
-    const favList = favStorage.filter( Obj => Obj === videoId );
-    const favBtn = (favList) ? delFavorites : addFavorites;
+    const favList = JSON.parse(localStorage.getItem("@favList")) || [];
+    let favBtn = (favList.filter( Obj => Obj === videoId )) ? delFavorites : addFavorites;
+
+    useEffect(() => {
+        favBtn = (favList.filter( Obj => Obj === videoId )) ? delFavorites : addFavorites;
+    }, [favList]);
 
     return(
         <main className={ styles.content__main }>

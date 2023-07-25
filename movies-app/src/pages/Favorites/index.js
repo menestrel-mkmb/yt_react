@@ -3,16 +3,17 @@ import Banner from "../../components/Banner";
 import youtubeStructure from "../../youtubeStructure";
 
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
-// export let favStorage = localStorage.getItem("favorites") || [];
-export let favStorage = localStorage.getItem("favorites") || ['3CRhYhJttcw', '5INMUcXFaaQ'];
+export let favStorage = localStorage.getItem("@favList");
+let favList = JSON.parse(favStorage) || ['3CRhYhJttcw', '5INMUcXFaaQ'];
 
 export function addFavorites( videoId ){
-    favStorage = [...favStorage, videoId];
+    favList = [...favList, videoId];
 }
 
 export function delFavorites( videoId ){
-    favStorage = favStorage.filter( obj => videoId !== obj );
+    favList = favList.filter( obj => videoId !== obj );
 }
 
 function artcEmpty() {
@@ -23,7 +24,7 @@ function artcEmpty() {
     );
 }
 
-function artcFav( obj ){
+function artcFav( obj, index ){
     return (
         <article key={ obj } className={ styles.fav__videoList }>
             <iframe className={ styles.yt__iframe }
@@ -32,12 +33,16 @@ function artcFav( obj ){
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
-            <Link className={ styles.fav__btn } >{`</3`}</Link>
+                    <Link className={ styles.fav__btn } onClick={ (obj)=>{delFavorites(obj)} } >{`</3`}</Link>
         </article>
     );
 }
 
 function Favorites(){
+    useEffect(() => {
+        console.log("teste");
+        localStorage.setItem("@favList", JSON.stringify(favList));
+    }, [favList]);
 
     return(
         <main className={ styles.content__main }>
@@ -47,10 +52,10 @@ function Favorites(){
             </h2>
             <section className={ styles.fav__section }>
                 {
-                (favStorage.length === 0) ?
+                (favList.length === 0) ?
                     artcEmpty() :
-                    favStorage.map( (obj) => { 
-                        return artcFav(obj)
+                    favList.map( (obj, index) => { 
+                        return artcFav(obj, index)
                     } )
                 }
             </section>
