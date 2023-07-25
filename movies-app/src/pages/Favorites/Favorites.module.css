@@ -23,3 +23,20 @@
     align-items: center;
     gap: 1rem;
 }
+
+.fav__videolist {
+    display: flex;
+    flex-direction: row;
+}
+
+.fav__btn {
+    color: red;
+    background-color: white;
+    border-radius: 25%;
+
+    position: relative;
+    top: -420px;
+    left: -80px;
+
+    padding: .5rem 1rem;
+}
