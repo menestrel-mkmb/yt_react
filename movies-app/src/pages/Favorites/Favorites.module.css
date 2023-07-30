@@ -4,6 +4,7 @@
     text-align: center;
 
     height: 100%;
+    padding: 1rem 0;
 }
 
 .fav__title {
@@ -36,7 +37,7 @@
     text-decoration: none;
 
     position: relative;
-    top: -420px;
+    top: -435px;
     left: -80px;
 
     padding: .5rem 1rem;

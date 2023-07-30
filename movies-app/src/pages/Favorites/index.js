@@ -3,7 +3,7 @@ import Banner from "../../components/Banner";
 import youtubeStructure from "../../youtubeStructure";
 
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export let favStorage = localStorage.getItem("@favList");
 let favList = JSON.parse(favStorage) || ['3CRhYhJttcw', '5INMUcXFaaQ'];
@@ -16,7 +16,7 @@ export function delFavorites( videoId ){
     favList = favList.filter( obj => videoId !== obj );
 }
 
-function artcEmpty() {
+function ArtcEmpty() {
     return (
         <article className={ styles.fav__videoList }>
             <h3 className={ styles.empty__text } >Você não possui nenhum favorito</h3>
@@ -24,9 +24,20 @@ function artcEmpty() {
     );
 }
 
-function artcFav( obj, index ){
+function ArtcFav( obj ){
+    let url = 'https://noembed.com/embed?url=' + 'http%3A//www.youtube.com/watch%3Fv%3D' + obj;
+    const [useNameVideo, setNameVideo] = useState('');
+
+    useEffect(() => {
+        fetch(url)
+        .then(res => res.json())
+        .then((out) => { setNameVideo(out.title)})
+        .catch(err => { throw err });
+    }, [useNameVideo]);
+
     return (
         <article key={ obj } className={ styles.fav__videoList }>
+            <h3>{useNameVideo}</h3>
             <iframe className={ styles.yt__iframe }
             width="854" height="480"
             src={ youtubeStructure.linkEmbed + obj }
@@ -53,9 +64,9 @@ function Favorites(){
             <section className={ styles.fav__section }>
                 {
                 (favList.length === 0) ?
-                    artcEmpty() :
+                    ArtcEmpty() :
                     favList.map( (obj, index) => { 
-                        return artcFav(obj, index)
+                        return ArtcFav(obj, index)
                     } )
                 }
             </section>
