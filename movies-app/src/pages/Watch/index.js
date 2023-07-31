@@ -3,26 +3,37 @@ import youtubeStructure from "../../youtubeStructure";
 import Banner from "../../components/Banner";
 
 import { useParams, Link } from "react-router-dom";
-import { addFavorites, delFavorites } from "../Favorites";
+import { addFavorite, delFavorite, favoritesExport } from "../Favorites";
 import { useEffect } from "react";
 
 function Watch(){
     const params = useParams();
     const videoId = params.id;
 
-    const favList = JSON.parse(localStorage.getItem("@favList")) || [];
-    let favBtn = (favList.filter( Obj => Obj === videoId )) ? delFavorites : addFavorites;
+    let favList = favoritesExport;
+    let favBtn = `<3`;
+
+    function toggleFav(e, obj){
+        if(favList.includes(obj)){
+            console.log("deletou fav");
+            delFavorite(obj);
+            favBtn = `<3`;
+        } else {
+            console.log("adicionou fav");
+            addFavorite(obj);
+            favBtn = `</3`;
+        }
+    }
 
     useEffect(() => {
-        favBtn = (favList.filter( Obj => Obj === videoId )) ? delFavorites : addFavorites;
-    }, [favList]);
+    },[favBtn]);
 
     return(
         <main className={ styles.content__main }>
             <Banner className={ styles.banner__img} bannerImg="watch" />
             <div className={ styles.watchline__text } >
                 <h1 className={ styles.watch__title }>Assistir</h1>
-                <Link className={ styles.fav__btn } onClick={ favBtn } >{`<3`}
+                <Link className={ styles.fav__btn } onClick={ (e) => toggleFav(e, videoId) } >{favBtn}
                 </Link>
                 <a  className={ styles.yt__link }
                     href={ youtubeStructure.videoLink + videoId }
