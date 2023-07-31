@@ -1,5 +1,6 @@
 import styles from "./Favorites.module.css";
 import Banner from "../../components/Banner";
+import Search from "../../components/Search";
 import youtubeStructure from "../../youtubeStructure";
 
 import { Link } from "react-router-dom";
@@ -9,11 +10,15 @@ export let favStorage = localStorage.getItem("@favList");
 let favList = JSON.parse(favStorage) || ['3CRhYhJttcw', '5INMUcXFaaQ'];
 
 export function addFavorites( videoId ){
-    favList = [...favList, videoId];
+    const idStr = JSON.stringify(videoId);
+    if(!favList.includes(idStr))
+        favList = [...favList, idStr];
 }
 
 export function delFavorites( videoId ){
-    favList = favList.filter( obj => videoId !== obj );
+    const idStr = JSON.stringify(videoId);
+    if(favList.includes(idStr))
+        favList = favList.filter( obj => idStr !== obj );
 }
 
 function ArtcEmpty() {
@@ -25,21 +30,21 @@ function ArtcEmpty() {
 }
 
 function ArtcFav( obj ){
-    let url = 'https://noembed.com/embed?url=' + 'http%3A//www.youtube.com/watch%3Fv%3D' + obj;
+    let videoUrl = `https://noembed.com/embed?url=http%3A//www.youtube.com/watch%3Fv%3D${obj}`;
     const [useNameVideo, setNameVideo] = useState('');
 
-    useEffect(() => {
-        fetch(url)
+    useEffect((videoUrl) => {
+        fetch(videoUrl)
         .then(res => res.json())
         .then((out) => { setNameVideo(out.title)})
         .catch(err => { throw err });
-    }, [useNameVideo]);
+    }, [videoUrl]);
 
     return (
         <article key={ obj } className={ styles.fav__videoList }>
             <h3>{useNameVideo}</h3>
             <iframe className={ styles.yt__iframe }
-            width="854" height="480"
+            width="640" height="480"
             src={ youtubeStructure.linkEmbed + obj }
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -50,10 +55,9 @@ function ArtcFav( obj ){
 }
 
 function Favorites(){
-    useEffect(() => {
-        console.log("teste");
+    useEffect((favList) => {
         localStorage.setItem("@favList", JSON.stringify(favList));
-    }, [favList]);
+    }, []);
 
     return(
         <main className={ styles.content__main }>
@@ -61,6 +65,7 @@ function Favorites(){
             <h2 className={ styles.fav__title }>
                 Favoritos
             </h2>
+            <Search />
             <section className={ styles.fav__section }>
                 {
                 (favList.length === 0) ?
